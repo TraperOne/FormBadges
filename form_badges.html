@@ -10,42 +10,51 @@
 
 		<link rel="stylesheet" href="mystyle.css">
     </head>
-    <body style="font-family: celibri; line-height:1.5">
-	  <h2>Ankieta dotyczy powstającej aplikacji <em>Zbieram Odznaki Górskie</em></h2>
-		<form action="/action_page.php" method="post">
+    <body>
+	  <h1>Ankieta</h1><h2> dotyczy powstającej aplikacji <em>Zbieram Odznaki Górskie</em></h2>
+	  <h4>Zapraszam do wypełnienia ankiety, która pomoże określić w jaki sposob aplikacji.</h4>
+		<form action="#" method="post">
+			<p>1. Proszę wpisz, ile jakichkolwiek odznak związanych z górami zdobyłeś/aś?</p>
+			<input type="number" name="how_many_badges" min="0" max="50" value="0" required>
+			<p>2. Proszę zaznacz rodzaje odznak, jakie <b><u>aktualnie</u></b> zdobywasz?</p>
+			<input type="checkbox" name="badges_got" value="GOT" id="got"><label for="got">Górskie Odznaki Turystyczne GOT PTTK</label><br>
+			<input type="checkbox" name="badge_kgp" value="KGP" id="kgp"><label for="kgp">Korona Gór Polski</label><br>
+			<input type="checkbox" name="badges_knsgp" value="KNSGP" id="knsgp"><label for="knsgp">Korona Najwybitniejszych Szczytów Gór Polskich</label><br>
+			<input type="checkbox" name="badges_knssp" value="KNSSP" id="knssp"><label for="knssp">Korona Najwybitniejszych Szczytów Sudetów Polskich</label><br>
+			<input type="checkbox" name="badges_knskp" value="KNSKP" id="knskp"><label for="knskp">Korona Najwybitniejszych Szczytów Karpat Polskich</label><br>
+			<input type="checkbox" name="badges_kppg" value="KPPG" id="kppg"><label for="kppg">Korony Pojedynczych Pasm Górskich (w sumie 29 pasm górskich)</label><br>
+			<input type="checkbox" name="badge_gsb" value="GSB" id="gsb"><label for="gsb">Odznaka Turystyczna Główny Szlak Beskidzki PTTK</label><br>
+			<input type="checkbox" name="badge_gsbw" value="GSBW" id="gsbw"><label for="gsbw">Odznaka Turystyczna Główny Szlak Beskidu Wyspowego PTTK</label><br>
+			<input type="checkbox" name="badge_gss" value="GSS" id="gss"><label for="gss">Odznaka Turystyczna Główny Szlak Sudecki PTTK</label><br>
+			<input type="checkbox" name="badge_gssw" value="GSSW" id="gssw"><label for="gssw">Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</label>
+			<p>3. Jaka odznaka powinna się jeszcze znaleźć w aplikacji? (Proszę wpisać pełną nazwę odznaki dotyczącą wyłącznie górskiego obszaru Polski)</p>
+			<textarea name="message" rows="5" cols="60"></textarea>
+			<p>4. Co mogłaby według Ciebie jeszcze zawierać taka aplikacja?</p>
+			Baza noclegowa
+			Interesujące zabytki
+			Poradnik sprzętowy
+			Blog podróżniczy
+			Pogoda
+
+			<p>5. Czy korzystał/abyś  z takiej aplikacji?</p>
+			<input type="radio" name="decision" value="yes"> Zdecydowanie Tak<br>
+			<input type="radio" name="decision" value="yes"> Raczej Tak<br>
+			<input type="radio" name="decision" value="no"> Raczej Nie<br>
+			<input type="radio" name="decision" value="no"> Zdecydowanie Nie<br>
+			<input type="radio" name="decision" value="maybe" required> Trudno powiedzieć
 			<fieldset>
 				<legend>Informacje osobiste:</legend>
-					<p>Proszę zaznaczyć swoją płeć.<br>
+					<p>Proszę podaj swoją płeć.</p>
 					<input type="radio" name="gender" value="male"> Kobieta<br>
-					<input type="radio" name="gender" value="female" required> Mężczyzna</p>	
-					<p>Proszę zaznaczyć w jakim przedziale wiekowym Pan/i się znajduje?<br>
+					<input type="radio" name="gender" value="female" required> Mężczyzna	
+					<p>Proszę podaj swój wiek, w którym się znajduje?</p>
 					<input type="radio" name="age" value="low_18" required> poniżej 18 lat<br>
-					<input type="radio" name="age" value="19-26"> 19 - 25 lat<br>
+					<input type="radio" name="age" value="19-26"> 18 - 25 lat<br>
 					<input type="radio" name="age" value="27-39"> 26 - 35 lat<br>
 					<input type="radio" name="age" value="27-39"> 36 - 45 lat<br>
 					<input type="radio" name="age" value="40-56"> 46 - 55 lat<br>
-					<input type="radio" name="age" value="more_56"> powyżej 56 lat</p>
+					<input type="radio" name="age" value="more_56"> powyżej 55 lat
 			</fieldset>
-			<p>1. Proszę wybrać, ile odznak (jakichkolwiek związanych z górami) Pan/i zdobył/a?<br>
-			<input type="number" name="how_many_badges" placeholder="Wybierz" required></p>
-			<p>2. Proszę wybrać rodzaje odznak, jakie aktualnie Pan/i zdobywa?<br>
-			<input type="checkbox" name="badges_got" value="GOT"> Górskie Odznaki Turystyczne GOT PTTK<br>
-			<input type="checkbox" name="badge_kgp" value="KGP"> Korona Gór Polski<br>
-			<input type="checkbox" name="badges_knsgp" value="KNSGP"> Korona Najwybitniejszych Szczytów Gór Polskich<br>
-			<input type="checkbox" name="badges_knssp" value="KNSSP"> Korona Najwybitniejszych Szczytów Sudetów Polskich<br>
-			<input type="checkbox" name="badges_knskp" value="KNSKP"> Korona Najwybitniejszych Szczytów Karpat Polskich<br>
-			<input type="checkbox" name="badges_kppg" value="KPPG"> Korony Pojedynczych Pasm Górskich (w sumie 29 pasm górskich)<br>
-			<input type="checkbox" name="badge_gsb" value="GSB"> Odznaka Turystyczna Główny Szlak Beskidzki PTTK<br>
-			<input type="checkbox" name="badge_gsbw" value="GSBW"> Odznaka Turystyczna Główny Szlak Beskidu Wyspowego PTTK<br>
-			<input type="checkbox" name="badge_gss" value="GSS"> Odznaka Turystyczna Główny Szlak Sudecki PTTK<br>
-			<input type="checkbox" name="badge_gssw" value="GSSW"> Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</p>
-			<p>3. Jaka odznaka powinna się jeszcze znaleźć w aplikacji?<br>
-			(Proszę wpisać pełną nazwę odznaki dotyczącą wyłącznie górskiego obszaru Polski)<br>
-			<textarea name="message" rows="5" cols="60"></textarea></p>
-			<p>4. Czy korzystał/aby Pan/i z takiej aplikacji?<br>
-			<input type="radio" name="decision" value="yes"> Tak<br>
-			<input type="radio" name="decision" value="no"> Nie<br>
-			<input type="radio" name="decision" value="maybe" required> Trudno powiedzieć</p>
 			<br>
 			<input type="submit" value="Wyślij">
 			
