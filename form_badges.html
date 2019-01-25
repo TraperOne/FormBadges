@@ -11,49 +11,53 @@
 		<link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
-	  <h1>Ankieta</h1><h2> dotyczy powstającej aplikacji <em>Zbieram Odznaki Górskie</em></h2>
-	  <h4>Zapraszam do wypełnienia ankiety, która pomoże określić w jaki sposob aplikacji.</h4>
+	  <h1><em>Zbieram Odznaki Górskie</em></h1>
+	  <p>Zapraszam do wypełnienia ankiety, która pomoże określić w jaki sposob aplikacji.</p>
 		<form action="#" method="post">
 			<p>1. Proszę wpisz, ile jakichkolwiek odznak związanych z górami zdobyłeś/aś?</p>
-			<input type="number" name="how_many_badges" min="0" max="50" value="0" required>
+				<input type="number" name="how_many_badges" min="0" max="50" value="0" required>
 			<p>2. Proszę zaznacz rodzaje odznak, jakie <b><u>aktualnie</u></b> zdobywasz?</p>
-			<input type="checkbox" name="badges_got" value="GOT" id="got"><label for="got">Górskie Odznaki Turystyczne GOT PTTK</label><br>
-			<input type="checkbox" name="badge_kgp" value="KGP" id="kgp"><label for="kgp">Korona Gór Polski</label><br>
-			<input type="checkbox" name="badges_knsgp" value="KNSGP" id="knsgp"><label for="knsgp">Korona Najwybitniejszych Szczytów Gór Polskich</label><br>
-			<input type="checkbox" name="badges_knssp" value="KNSSP" id="knssp"><label for="knssp">Korona Najwybitniejszych Szczytów Sudetów Polskich</label><br>
-			<input type="checkbox" name="badges_knskp" value="KNSKP" id="knskp"><label for="knskp">Korona Najwybitniejszych Szczytów Karpat Polskich</label><br>
-			<input type="checkbox" name="badges_kppg" value="KPPG" id="kppg"><label for="kppg">Korony Pojedynczych Pasm Górskich (w sumie 29 pasm górskich)</label><br>
-			<input type="checkbox" name="badge_gsb" value="GSB" id="gsb"><label for="gsb">Odznaka Turystyczna Główny Szlak Beskidzki PTTK</label><br>
-			<input type="checkbox" name="badge_gsbw" value="GSBW" id="gsbw"><label for="gsbw">Odznaka Turystyczna Główny Szlak Beskidu Wyspowego PTTK</label><br>
-			<input type="checkbox" name="badge_gss" value="GSS" id="gss"><label for="gss">Odznaka Turystyczna Główny Szlak Sudecki PTTK</label><br>
-			<input type="checkbox" name="badge_gssw" value="GSSW" id="gssw"><label for="gssw">Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</label>
+				<input type="checkbox" name="badges_got" value="GOT" id="got"><label for="got">Górskie Odznaki Turystyczne GOT PTTK</label><br>
+				<input type="checkbox" name="badge_kgp" value="KGP" id="kgp"><label for="kgp">Korona Gór Polski</label><br>
+				<input type="checkbox" name="badges_knsgp" value="KNSGP" id="knsgp"><label for="knsgp">Korona Najwybitniejszych Szczytów Gór Polskich</label><br>
+				<input type="checkbox" name="badges_knssp" value="KNSSP" id="knssp"><label for="knssp">Korona Najwybitniejszych Szczytów Sudetów Polskich</label><br>
+				<input type="checkbox" name="badges_knskp" value="KNSKP" id="knskp"><label for="knskp">Korona Najwybitniejszych Szczytów Karpat Polskich</label><br>
+				<input type="checkbox" name="badges_kppg" value="KPPG" id="kppg"><label for="kppg">Korony Pojedynczych Pasm Górskich (w sumie 29 pasm górskich)</label><br>
+				<input type="checkbox" name="badge_gsb" value="GSB" id="gsb"><label for="gsb">Odznaka Turystyczna Główny Szlak Beskidzki PTTK</label><br>
+				<input type="checkbox" name="badge_gsbw" value="GSBW" id="gsbw"><label for="gsbw">Odznaka Turystyczna Główny Szlak Beskidu Wyspowego PTTK</label><br>
+				<input type="checkbox" name="badge_gss" value="GSS" id="gss"><label for="gss">Odznaka Turystyczna Główny Szlak Sudecki PTTK</label><br>
+				<input type="checkbox" name="badge_gssw" value="GSSW" id="gssw"><label for="gssw">Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</label>
 			<p>3. Jaka odznaka powinna się jeszcze znaleźć w aplikacji? (Proszę wpisać pełną nazwę odznaki dotyczącą wyłącznie górskiego obszaru Polski)</p>
-			<textarea name="message" rows="5" cols="60"></textarea>
-			<p>4. Co mogłaby według Ciebie jeszcze zawierać taka aplikacja?</p>
-			Baza noclegowa
-			Interesujące zabytki
-			Poradnik sprzętowy
-			Blog podróżniczy
-			Pogoda
-
+				<textarea name="message" rows="5" cols="60"></textarea>
+			<p>4. Co mogłaby się jeszcze zawierać taka aplikacja?</p>
+				<select name="criteria">
+					<option> - wybierz -</option><br>
+					<option value="accommodation">Baza noclegowa</option><br>
+					<option value="monuments">Interesujące zabytki</option><br>
+					<option value="guide">Poradnik sprzętowy</option><br>
+					<option value="blog">Blog podróżniczy</option><br>
+					<option value="nothink" required>Nic więcej nie potrzeba</option><br>
+				</select><br>
+			<p>4.1. Czy coś jeszcze mogłoby towarzyszyć takiej aplikacji nie zawarte w liście wyżej?</p>
+				<input type="text" name="wath_else">
 			<p>5. Czy korzystał/abyś  z takiej aplikacji?</p>
-			<input type="radio" name="decision" value="yes"> Zdecydowanie Tak<br>
-			<input type="radio" name="decision" value="yes"> Raczej Tak<br>
-			<input type="radio" name="decision" value="no"> Raczej Nie<br>
-			<input type="radio" name="decision" value="no"> Zdecydowanie Nie<br>
-			<input type="radio" name="decision" value="maybe" required> Trudno powiedzieć
+				<input type="radio" name="decision" value="yes"> Zdecydowanie Tak<br>
+				<input type="radio" name="decision" value="rather_yes"> Raczej Tak<br>
+				<input type="radio" name="decision" value="maybe" required> Być może<br>
+				<input type="radio" name="decision" value="probably_no"> Raczej Nie<br>
+				<input type="radio" name="decision" value="no"> Zdecydowanie Nie<br>
 			<fieldset>
 				<legend>Informacje osobiste:</legend>
 					<p>Proszę podaj swoją płeć.</p>
-					<input type="radio" name="gender" value="male"> Kobieta<br>
-					<input type="radio" name="gender" value="female" required> Mężczyzna	
+						<input type="radio" name="gender" value="male"> Kobieta<br>
+						<input type="radio" name="gender" value="female" required> Mężczyzna	
 					<p>Proszę podaj swój wiek, w którym się znajduje?</p>
-					<input type="radio" name="age" value="low_18" required> poniżej 18 lat<br>
-					<input type="radio" name="age" value="19-26"> 18 - 25 lat<br>
-					<input type="radio" name="age" value="27-39"> 26 - 35 lat<br>
-					<input type="radio" name="age" value="27-39"> 36 - 45 lat<br>
-					<input type="radio" name="age" value="40-56"> 46 - 55 lat<br>
-					<input type="radio" name="age" value="more_56"> powyżej 55 lat
+						<input type="radio" name="age" value="less_18" required> poniżej 18 lat<br>
+						<input type="radio" name="age" value="18-25"> 18 - 25 lat<br>
+						<input type="radio" name="age" value="26-35"> 26 - 35 lat<br>
+						<input type="radio" name="age" value="36-45"> 36 - 45 lat<br>
+						<input type="radio" name="age" value="46-55"> 46 - 55 lat<br>
+						<input type="radio" name="age" value="over_55"> powyżej 55 lat
 			</fieldset>
 			<br>
 			<input type="submit" value="Wyślij">
