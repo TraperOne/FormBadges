@@ -1,0 +1,14 @@
+﻿body {
+	font-family: celibri;
+	line-height: 1.5;
+}
+p {
+	margin-bottom: 0px;
+}
+
+label {
+	padding: 5px;
+}
+fieldset {
+	margin-top: 24px;
+}
