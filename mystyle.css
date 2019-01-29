@@ -1,14 +1,25 @@
 ﻿body {
+	margin-left: 50px;
 	font-family: celibri;
 	line-height: 1.5;
 }
-p {
+h1 {
+	text-align: center;
+}
+p, ol {
 	margin-bottom: 0px;
 }
-
+p.question {
+	margin-top: 0px;
+	margin-left: 40px;
+}
+input, textarea, select {
+	margin-left: 40px;
+}
 label {
-	padding: 5px;
+	padding: 4px;
 }
 fieldset {
 	margin-top: 24px;
+	padding: 0 20px 20px 20px;
 }

@@ -14,22 +14,23 @@
 	  <h1><em>Zbieram Odznaki Górskie</em></h1>
 	  <p>Zapraszam do wypełnienia ankiety, która pomoże określić w jaki sposob aplikacji.</p>
 		<form action="#" method="post">
-			<p>1. Proszę wpisz, ile jakichkolwiek odznak związanych z górami zdobyłeś/aś?</p>
+			<ol><li>Proszę wpisz, ile jakichkolwiek odznak związanych z górami zdobyłeś/aś?</li></ol>
 				<input type="number" name="how_many_badges" min="0" max="50" value="0" required>
-			<p>2. Proszę zaznacz rodzaje odznak, jakie <b><u>aktualnie</u></b> zdobywasz?</p>
+			<ol start="2"><li>Proszę zaznacz rodzaje odznak, jakie <b>aktualnie</b> zdobywasz?</li></ol>
 				<input type="checkbox" name="badges_got" value="GOT" id="got"><label for="got">Górskie Odznaki Turystyczne GOT PTTK</label><br>
 				<input type="checkbox" name="badge_kgp" value="KGP" id="kgp"><label for="kgp">Korona Gór Polski</label><br>
 				<input type="checkbox" name="badges_knsgp" value="KNSGP" id="knsgp"><label for="knsgp">Korona Najwybitniejszych Szczytów Gór Polskich</label><br>
 				<input type="checkbox" name="badges_knssp" value="KNSSP" id="knssp"><label for="knssp">Korona Najwybitniejszych Szczytów Sudetów Polskich</label><br>
 				<input type="checkbox" name="badges_knskp" value="KNSKP" id="knskp"><label for="knskp">Korona Najwybitniejszych Szczytów Karpat Polskich</label><br>
-				<input type="checkbox" name="badges_kppg" value="KPPG" id="kppg"><label for="kppg">Korony Pojedynczych Pasm Górskich (w sumie 29 pasm górskich)</label><br>
+				<input type="checkbox" name="badges_kppg" value="KPPG" id="kppg"><label for="kppg">Korony Pojedynczych Pasm Górskich (zawiera 29 pasm górskich)</label><br>
 				<input type="checkbox" name="badge_gsb" value="GSB" id="gsb"><label for="gsb">Odznaka Turystyczna Główny Szlak Beskidzki PTTK</label><br>
 				<input type="checkbox" name="badge_gsbw" value="GSBW" id="gsbw"><label for="gsbw">Odznaka Turystyczna Główny Szlak Beskidu Wyspowego PTTK</label><br>
 				<input type="checkbox" name="badge_gss" value="GSS" id="gss"><label for="gss">Odznaka Turystyczna Główny Szlak Sudecki PTTK</label><br>
-				<input type="checkbox" name="badge_gssw" value="GSSW" id="gssw"><label for="gssw">Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</label>
-			<p>3. Jaka odznaka powinna się jeszcze znaleźć w aplikacji? (Proszę wpisać pełną nazwę odznaki dotyczącą wyłącznie górskiego obszaru Polski)</p>
-				<textarea name="message" rows="4" cols="50" placeholder="Tu wpisz nazwę odznaki.."></textarea>
-			<p>4. Co mogłaby się jeszcze zawierać taka aplikacja?</p>
+				<input type="checkbox" name="badge_gssw" value="GSSW" id="gssw"><label for="gssw">Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</label><br>
+				<textarea name="message" rows="2" cols="50" placeholder="Wpisz jeśli nie ma takiej wyżej wymienionej.."></textarea>
+			<ol start="3"><li>Jaka odznaka powinna się jeszcze znaleźć w aplikacji? (Proszę wpisać pełną nazwę odznaki dotyczącą wyłącznie górskiego obszaru Polski)</li></ol>
+				<textarea name="message" rows="3" cols="50" placeholder="Tu wpisz nazwę odznaki.."></textarea>
+			<ol start="4"><li>Co mogłaby się jeszcze zawierać taka aplikacja?</li></ol>
 				<select name="criteria">
 					<option> - wybierz -</option><br>
 					<option value="accommodation">Baza noclegowa</option><br>
@@ -38,9 +39,9 @@
 					<option value="blog">Blog podróżniczy</option><br>
 					<option value="nothink" required>Nic więcej nie potrzeba</option><br>
 				</select><br>
-				<p>Czy coś jeszcze powinno się znaleźć nie zawarte na powyższej liście?</p>
+				<p class="question">Czy coś jeszcze powinno się znaleźć nie zawarte na powyższej liście?</p>
 					<input type="text" name="wath_else" placeholder="Wpisz tu..">
-			<p>5. Czy korzystał/abyś  z takiej aplikacji?</p>
+			<ol start="5"><li>Czy korzystał/abyś  z takiej aplikacji?</li></ol>
 				<input type="radio" name="decision" value="yes" id="yes"><label for="yes"> Zdecydowanie Tak</label><br>
 				<input type="radio" name="decision" value="rather_yes" id="rathery"><label for="rathery"> Raczej Tak</label><br>
 				<input type="radio" name="decision" value="maybe" id="mabye" required><label for="mabye"> Być może</label><br>
