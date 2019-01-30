@@ -1,10 +1,24 @@
-﻿body {
-	margin-left: 50px;
+﻿* {
+  box-sizing: border-box;
+}
+body {
+	background-color: #d9d9d9;
 	font-family: celibri;
 	line-height: 1.4;
 }
+div.content {
+	max-width: 70%;
+	margin: auto;
+	margin-top: 50px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 14px 7px #505050;
+}
 h1 {
+	background-color: #88cc00;
+	padding: 30px;
+	font-size: 5vw;
 	text-align: center;
+	text-shadow: 4px 4px 6px #ffffff;
 }
 p, ol {
 	margin-bottom: 0px;
@@ -12,11 +26,18 @@ p, ol {
 input, textarea, select {
 	margin-left: 40px;
 }
+input:checked + label {
+	color: #3bb300
+}
+#other:checked input[type=text].badge_other {
+	visibility: visible;
+}
 input[type=text] {
 	width: 300px;
 }
 input.badge_other {
 	margin-left: 5px;
+	display: none;
 }
 label, legend {
 	padding: 4px;
