@@ -28,7 +28,7 @@
 					<input type="checkbox" name="badge_gsbw" value="GSBW" id="gsbw"><label for="gsbw">Odznaka Turystyczna Główny Szlak Beskidu Wyspowego PTTK</label><br>
 					<input type="checkbox" name="badge_gss" value="GSS" id="gss"><label for="gss">Odznaka Turystyczna Główny Szlak Sudecki PTTK</label><br>
 					<input type="checkbox" name="badge_gssw" value="GSSW" id="gssw"><label for="gssw">Odznaka Turystyczna Główny Szlak Świętokrzyski PTTK</label><br>
-					<input type="checkbox" id="other"><label for="other">Inna</label><input class="badge_other" type="text" name="badge_other" placeholder="Jaka?">
+					<input type="checkbox" id="other" onclick="myFunction()"><label for="other" onclick="myFunction()">Inna</label><input id="badge_other" type="text" name="badge_other" placeholder="Jaka?">
 					 <!-- placeholder="Wpisz tu jeśli nie ma wyżej wymienionej.." -->
 				<ol start="3"><li>Jaka odznaka powinna się jeszcze znaleźć w aplikacji? (Proszę wpisać pełną nazwę odznaki dotyczącą wyłącznie górskiego obszaru Polski)</li></ol>
 					<textarea name="what_badge_is_missing" rows="3" cols="50" placeholder="Tu wpisz nazwę odznaki.."></textarea>
@@ -66,6 +66,11 @@
 				<input type="submit" value="Wyślij">
 			</form>
 			<footer>&copy; 2019 Emil Milczarczyk</footer>
-		</div>	
+		</div>
+		<script>
+		function myFunction() {
+			document.getElementById("badge_other").style.display = "inline";
+		}
+		</script>		
     </body>
 </html>

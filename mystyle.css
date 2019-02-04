@@ -1,9 +1,9 @@
 ﻿* {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
 	background-color: #d9d9d9;
-	font-family: Calibri, sans-serif;
+	font-family: Calibri, "Lucida Grande", sans-serif;
 	line-height: 1.4;
 }
 div.content {
@@ -16,8 +16,9 @@ div.content {
 h1 {
 	background-color: #88cc00;
 	padding: 30px;
-	font-family: 'Times New Roman', serif;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 5vw;
+	font-variant: small-caps;
 	text-align: center;
 	text-shadow: 4px 4px 6px #f2f2f2;
 }
@@ -30,13 +31,10 @@ input, textarea, select {
 input:checked + label {
 	color: #3bb300
 }
-#other:checked input[type=text].badge_other {
-	visibility: visible;
-}
 input[type=text] {
 	width: 300px;
 }
-input.badge_other {
+#badge_other {
 	margin-left: 5px;
 	display: none;
 }
