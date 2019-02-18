@@ -36,6 +36,8 @@ input:checked + label {
 }
 input[type="text"] {
 	width: 300px;
+	padding: 5px;
+	color: #3bb300;
 }
 #badge_other {
 	margin-left: 2px;
@@ -46,12 +48,26 @@ label, legend {
 	padding: 4px;
 }
 fieldset {
-	margin-top: 20px;
+	margin: 15px 25px;
 	padding: 0 20px 20px 20px;
 }
 fieldset input {
 	margin-left: 20px;
 }
+input[type=submit] {
+  width: 320px;
+  background-color: #ff8080;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 40px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #e60000;
+}
+
 footer {
 	background-color: #88cc00;
 	padding: 8px;
